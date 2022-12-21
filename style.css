@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+:root {
+	--accentColor: rgb(255, 115, 0);
+}
+body {
+	box-sizing: border-box;
+	font-family: 'Source Code Pro', monospace;
+	overflow: hidden;
+	background-color: rgb(236, 236, 236);
+	letter-spacing: -0.06rem;
+}
+.picture {
+	background-image: url(https://images.pexels.com/photos/1707820/pexels-photo-1707820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+	width: 40vw;
+	height: 100vh;
+	background-size: cover;
+}
+.content {
+	display: flex;
+}
+.right {
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
+	align-items: flex-start;
+	justify-content: center;
+}
+.formHeader {
+	padding-left: 5%;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+	/* height: 30vh; */
+	padding: 3rem 0;
+	width: 60vw;
+	background-color: rgb(243, 243, 243);
+	box-shadow: 0px 5px 5px rgb(0 0 0 / 12%);
+}
+.inputFlex {
+	display: flex;
+	padding-left: 6%;
+	gap: 20%;
+}
+.openingText > p {
+	padding-bottom: 2rem;
+	padding-left: 1.5rem;
+	font-size: 1.3rem;
+}
+.inputLeft,
+.inputRight {
+	width: min-content;
+	padding-bottom: 0.6rem;
+}
+h1 {
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+label {
+	font-size: 0.9rem;
+}
+.loginSection {
+	margin-top: 3%;
+	margin-left: 3%;
+}
+.btn {
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	border: 2px solid var(--accentColor);
+	background-color: var(--accentColor);
+	font-size: 0.9rem;
+	font-weight: 700;
+	margin-bottom: 5%;
+}
+.btn:hover {
+	color: var(--accentColor);
+	border: 2px solid black;
+	background-color: black;
+}
+.loginLink {
+	text-decoration: none;
+	color: var(--accentColor);
+}
+.loginLink:hover {
+	text-decoration: underline;
+}
+
+.logoOverlay {
+	position: absolute;
+	width: 40vw;
+	height: 15%;
+	background-color: rgba(0, 0, 0, 0.623);
+	top: 20%;
+}
+img,
+.logoGroup {
+	position: relative;
+	height: 100%;
+	height: 10vh;
+	left: auto;
+}
+.nightRider {
+	-webkit-text-stroke: 1px rgba(255, 0, 0, 0.774);
+	position: relative;
+	color: var(--accentColor);
+	height: 10vh;
+	font-size: 2rem;
+	font-family: 'Saira Stencil One', cursive;
+}
+.logoGroup {
+	text-align: center;
+}
+.error {
+	letter-spacing: normal;
+	font-weight: 600;
+	font-size: 0.75rem;
+	color: rgb(255, 0, 0);
+}
+
+input {
+	border: 1px solid rgb(211, 211, 211);
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+input:focus {
+	outline: none;
+	border: none;
+	box-shadow: 5px 5px 5px rgb(0 0 0 / 15%);
+}
+input:invalid:focus {
+	border: 2px solid rgb(252, 59, 59);
+}
+input:focus:valid {
+	outline: 2px solid rgb(44, 151, 44);
+}
+
+@media (max-width: 1085px) {
+	.picture {
+		min-height: 100vh;
+	}
+	.openingText > p {
+		text-align: center;
+		padding-top: 0.5rem;
+		font-size: 1.1rem;
+	}
+	.formHeader > h1 {
+		text-align: center;
+		font-size: 1.4rem;
+	}
+	form {
+		padding: 0.5rem;
+	}
+	.inputFlex {
+		display: grid;
+		gap: 1rem;
+		justify-content: center;
+		align-items: center;
+	}
+	.loginSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 3% auto;
+	}
+}

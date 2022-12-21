@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="main.js" defer></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="content">
+			<div class="picture">
+				<div class="logoOverlay">
+					<div class="logoGroup">
+						<img src="—Pngtree—owl mascot logo esport_7270169.png" alt="logo" />
+						<br />
+						<i class="nightRider">DavkoWeb</i>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="openingText">
+					<p>
+						This is not a real online service! You know you need something like
+						this in your life to help you realize your deepest dreams.
+						<br />
+						Sign up <em>now</em> to get started.
+					</p>
+					<p>You <em>know</em> you want to.</p>
+				</div>
+
+				<form action="#" id="mainForm">
+					<div class="formHeader"><h1>Let's do this</h1></div>
+					<div class="inputFlex">
+						<div class="leftSection">
+							<div class="inputLeft">
+								<label for="firstName">
+									FIRST NAME
+									<input
+										type="text"
+										id="firstName"
+										name="firstName"
+										placeholder="John"
+										minlength="2"
+										pattern="[A-Za-z]*"
+										required />
+									<div id="fNameError" class="error"></div
+								></label>
+							</div>
+							<div class="inputLeft">
+								<label for="email">
+									EMAIL
+									<input
+										type="email"
+										id="email"
+										name="email"
+										placeholder="example@mail.com"
+										required
+									/>
+									<div class="error" id="emailError"></div>
+								</label>
+							</div>
+							<div class="inputLeft">
+								<label for="pwd">
+									PASSWORD
+									<input
+										type="password"
+										id="pwd"
+										name="password"
+										placeholder="********"
+										minlength="8"
+										pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+										required
+									/>
+									<div class="error" id="pwdError"></div>
+								</label>
+							</div>
+						</div>
+						<div class="rightSection">
+							<div class="inputRight">
+								<label for="lastName"
+									>LAST NAME
+									<input
+										type="text"
+										id="lastName"
+										name="lastName"
+										placeholder="Johnson"
+										minlength="2"
+										pattern="[A-Za-z]*"
+										required
+									/>
+									<div class="error" id="lNameError"></div>
+								</label>
+							</div>
+							<div class="inputRight">
+								<label for="phoneNumber">
+									PHONE NUMBER
+									<input
+										type="tel"
+										id="phoneNumber"
+										name="phoneNumber"
+										placeholder="076123123"
+										minlength="9"
+										maxlength="9"
+										required
+									/>
+									<div class="error" id="phoneNumberError"></div>
+								</label>
+							</div>
+							<div class="inputRight">
+								<label for="pwdConfirm">
+									CONFIRM PASSWORD
+									<input
+										type="password"
+										id="pwdConfirm"
+										name="pwdConfirm"
+										placeholder="********"
+										minlength="8"
+										pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+										required
+									/>
+									<div class="error" id="pwdConfirmError"></div>
+								</label>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="loginSection">
+					<button class="btn" form="mainForm">Create Account</button>
+					<p>
+						ALREADY HAVE AN ACCOUNT? <a href="#" class="loginLink">LOG IN</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
